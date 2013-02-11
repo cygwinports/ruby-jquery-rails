@@ -1,0 +1,9 @@
+inherit rubygem
+
+NAME="ruby-jquery-rails"
+VERSION=2.2.1
+RELEASE=1
+CATEGORY="Ruby"
+SUMMARY="Ruby on Rails jQuery driver"
+DESCRIPTION="This gem provides jQuery and the jQuery-ujs driver for your Rails
+3 application."
