@@ -1,9 +1,15 @@
 inherit rubygem
 
 NAME="ruby-jquery-rails"
-VERSION=3.0.4
+VERSION=3.1.1
 RELEASE=1
 CATEGORY="Ruby"
 SUMMARY="Ruby on Rails jQuery driver"
 DESCRIPTION="This gem provides jQuery and the jQuery-ujs driver for your Rails
-3 application."
+3+ application."
+
+ARCH=noarch
+
+PKG_NAMES="${NAME} ${NAME}-doc"
+ruby_jquery_rails_CONTENTS="${RUBYGEM_INSTDIR#/} ${RUBYGEM_SPEC#/}"
+ruby_jquery_rails_doc_CONTENTS=${RUBYGEM_DOCDIR#/}
